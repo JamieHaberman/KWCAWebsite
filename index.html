@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Kay + Warburton</title>
+  <meta charset="utf-8">
+  <link href="index.css" rel="stylesheet" type="text/css" />
+   <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Lato">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  
+<script>
+	
+	
+  $(document).ready(function() {
+	
+  $("#moreinfodrew").on("click", function(){
+		
+	
+$('#moreinfodrew').css('visibility', 'hidden');
+	$('#drewtext').css('visibility', 'visible');
+	
+	
+	});
+    $("#moreinforich").on("click", function(){
+	$('#moreinforich').css('visibility', 'hidden');
+	$('#richtext').css('visibility', 'visible');
+		
+	
+	});
+  
+  
+  });
+</script>
+  <style>
+    #drewtext{
+      
+      visibility:hidden;
+    }
+    #moreinfodrew{
+      color: #ef432e;
+    }
+     #richtext{
+      
+      visibility:hidden;
+    }
+    #moreinforich{
+      color: #ef432e;
+    }
+  body {
+      position: relative;
+        font-family: 'Lato';
+  }
+  #section1 {padding-top:50px;height:500px;color: black; background-color: #1E88E5; text-align:center;}
+  #section2 {padding-top:50px;height:500px;color: black; background: url('aboutbg.png') ;text-align:center;}
+  #section3 {padding-top:50px;height:auto;color: black; background-color: #b0b0b1;text-align:center;}
+
+  #section4 {padding-top:20px; height:445px;color: black; background-color: #ef432e;text-align:center;}
+  #section5 {padding-top:20px; height:445px;color: black; background-color: #ef432e;text-align:center;}
+  
+  
+  
+.fadein { position:relative;  width:100%; background-color:red;}
+.fadein img { left:0; top:0; width:100%; background-color:blue; }
+
+   #abouttext{font-size:12pt; width:65vw; margin:auto; text-align:left;}
+#logo{
+	width:300px;}
+@media screen and (max-width: 414px) {
+	#logo{
+	width:220px;}
+	  #drewtext{
+      
+      font-size:9pt;
+    }
+	#richtext{
+		font-size:9pt;}
+	}
+  </style>
+  
+  //slideshow at top
+  <script>
+$(function(){
+	$('.fadein img:gt(0)').hide();
+	setInterval(function(){$('.fadein :first-child').fadeOut().next('img').fadeIn().end().appendTo('.fadein');}, 3000);
+});
+</script>
+  
+  
+</head>
+<body data-spy="scroll" data-target=".navbar" data-offset="50" style="padding:0px;margin:0px;">
+
+<nav class="navbar navbar-fixed-top" style="background-color:white; height:60px;">
+  <div class="container-fluid">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar" >
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#"><img src = "log.jpg" id="logo" ></a>
+    </div>
+    <div>
+      <div class="collapse navbar-collapse" id="myNavbar">
+        <ul class="nav navbar-nav">
+      
+          <li><a href="#section2" style="color:black; padding-top:20px;"><strong>About Us</strong></a></li>
+          <li><a href="#section3" style="color:black; padding-top:20px;"><strong>Our Team</strong></a></li>
+          <li><a href="#section4" style="color:black; padding-top:20px;"><strong>Contact Us</strong></a></li>
+        
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</nav>
+
+
+
+    <script src="js/jquery-1.11.3.min.js" type="text/javascript"></script>
+    <script src="js/jssor.slider-21.1.5.mini.js" type="text/javascript"></script>
+    <script type="text/javascript">
+        jQuery(document).ready(function ($) {
+            
+            var jssor_1_SlideoTransitions = [
+              [{b:-1,d:1,o:-1},{b:0,d:1000,o:1}],
+              [{b:1900,d:2000,x:-379,e:{x:7}}],
+              [{b:1900,d:2000,x:-379,e:{x:7}}],
+              [{b:-1,d:1,o:-1,r:288,sX:9,sY:9},{b:1000,d:900,x:-1400,y:-660,o:1,r:-288,sX:-9,sY:-9,e:{r:6}},{b:1900,d:1600,x:-200,o:-1,e:{x:16}}]
+            ];
+            
+            var jssor_1_options = {
+              $AutoPlay: true,
+              $SlideDuration: 1000,
+              $SlideEasing: $Jease$.$OutQuint,
+              $CaptionSliderOptions: {
+                $Class: $JssorCaptionSlideo$,
+                $Transitions: jssor_1_SlideoTransitions
+              },
+              $ArrowNavigatorOptions: {
+                $Class: $JssorArrowNavigator$
+              },
+              $BulletNavigatorOptions: {
+                $Class: $JssorBulletNavigator$
+              }
+            };
+            
+            var jssor_1_slider = new $JssorSlider$("jssor_1", jssor_1_options);
+            
+            //responsive code begin
+            //you can remove responsive code if you don't want the slider scales while window resizing
+            function ScaleSlider() {
+                var refSize = jssor_1_slider.$Elmt.parentNode.clientWidth;
+                if (refSize) {
+                    refSize = Math.min(refSize, 1920);
+                    jssor_1_slider.$ScaleWidth(refSize);
+                }
+                else {
+                    window.setTimeout(ScaleSlider, 30);
+                }
+            }
+            ScaleSlider();
+            $(window).bind("load", ScaleSlider);
+            $(window).bind("resize", ScaleSlider);
+            $(window).bind("orientationchange", ScaleSlider);
+            //responsive code end
+        });
+        
+    </script>
+
+    <div id="jssor_1" style="position: relative; margin: 0 auto; top: 0px; left: 0px; width: 1300px; height: 800px; overflow: hidden; visibility: hidden;">
+        <!-- Loading Screen -->
+        <div data-u="loading" style="position: absolute; top: 0px; left: 0px;">
+        </div>
+        <div data-u="slides" style="cursor: default; position: relative; top: 0px; left: 0px; width: 1300px; height: 800px; overflow: hidden;">
+            <div data-p="225.00" style="display: none;">
+                <img data-u="image" src="chairsfron.png" />
+                <div data-u="caption" data-t="0" style="position: absolute; top: 120px; left: 650px; width: 470px; height: 220px;">
+                    <div style="position: absolute; top: 4px; left: 45px; width: 379px; height: 213px; overflow: hidden;">  
+                    </div>
+                </div>
+            </div>
+            <div data-p="225.00" data-po="80% 55%" style="display: none;">
+                <img data-u="image" src="richoffice.png" />
+            </div>
+              <div data-p="225.00" data-po="80% 55%" style="display: none;">
+                <img data-u="image" src="meetingroom.png" />
+            </div>
+     
+               
+   <div data-p="225.00" data-po="80% 55%" style="display: none;">
+                <img data-u="image" src="_DSC5283.jpg" />
+            </div>
+  
+      <div data-p="225.00" data-po="80% 55%" style="display: none;">
+                <img data-u="image" src="kw.png" />
+            </div>
+         <div data-p="225.00" data-po="80% 55%" style="display: none;">
+                <img data-u="image" src="meetingroom.png" />
+          
+            </div>
+         <div data-p="225.00" data-po="80% 55%" style="display: none;">
+                <img data-u="image" src="_DSC5322.jpg" />
+          
+            </div>
+         <div data-p="225.00" data-po="80% 55%" style="display: none;">
+                <img data-u="image" src="_DSC5158 (1).jpg" />
+          
+            </div>
+         <div data-p="225.00" data-po="80% 55%" style="display: none;">
+                <img data-u="image" src="_DSC5140.jpg" />
+          
+            </div>
+       
+       <div data-p="225.00" data-po="80% 55%" style="display: none;">
+                <img data-u="image" src=" cn.png" />
+            </div>
+       <div data-p="225.00" data-po="80% 55%" style="display: none;">
+                <img data-u="image" src="19.jpg" />
+            </div>
+       <div data-p="225.00" data-po="80% 55%" style="display: none;">
+                <img data-u="image" src="park.png" />
+            </div>
+       
+        <div data-p="225.00" data-po="80% 55%" style="display: none;">
+                <img data-u="image" src="_DSC5338.jpg" />
+            </div>
+ <div data-p="225.00" data-po="80% 55%" style="display: none;">
+                <img data-u="image" src="_DSC5111.jpg" />
+            </div>
+  <div data-p="225.00" data-po="80% 55%" style="display: none;">
+                <img data-u="image" src="bwchair.png" />
+            </div>
+  <div data-p="225.00" data-po="80% 55%" style="display: none;">
+                <img data-u="image" src="7.jpg" />
+            </div>
+  <div data-p="225.00" data-po="80% 55%" style="display: none;">
+                <img data-u="image" src="_DSC5093.jpg" />
+            </div>
+        </div>
+      
+    </div>
+
+
+
+<div id="section2" class="container-fluid">
+  <h1>About Us</h1>
+  
+  		
+
+ <div style="text-align:left; padding-left:30px; padding-right:30px; padding-top:15px;height:300px; overflow: auto;">
+<p>
+  Kay & Warburton is a leading Canadian accounting firm specializing in accounting, tax and advisory services to the entertainment and media industry.  Founded in 1992 by industry veterans Andrew Kay and Richard Warburton, Kay & Warburton is  the largest independent practice of chartered professional accountants in this industry based in Canada.
+
+
+</br></br>
+Over the past 24 years, we have established ourselves as the leading entertainment accounting firm in Canada. Our expertise and knowledge of the Canadian film and television business, including the myriad of complex government programs and tax credits, has made us the leader in the industry. Our client list includes top production companies from across Canada and companies from the United States and other jurisdictions who want to access the Canadian tax credits for their productions. 
+</br></br>
+Our services include production tax credit filings and collections, production audits for tax purposes, structuring and tax advice, corporate financial statement audits and reviews, advisory and consulting services for lenders to the media industry, investors and sellers, due diligence investigations, valuations and transaction support.  We are often consulted on cross border structuring and are involved in tax assessments and compliance.
+</br></br>
+The legislation governing the media and entertainment business is intricate and is constantly evolving.  At Kay & Warburton we only serve one industry and we are the leading experts in our field.  We are on top of any legislative and tax changes and prospective amendments and help our clients react and adapt to this ever-changing complex environment.
+</p>
+</div>
+   </div>
+
+			 <div class="tech-slideshow2">
+  <div class="mover-3"></div>
+  <div class="mover-4"></div>
+</div>
+<div id="section3" class="container-fluid">
+  <h1>Our Team</h1>
+  </br></br></br>
+   <div class="row">
+   <div class="col-sm-6" ><img src="drewnew.jpg" style="width:71%;border: solid 3px black;"></div>
+   <div class="col-sm-6"style="text-align: left;"><strong>Andrew Kay, CA</strong>
+					</br>
+						416-977-2416 x 223 | andrew@kwca.com</br>
+                        <div id="moreinfodrew">More Info</div>
+                        <div id="drewtext">
+                      Andrew Kay is a partner and co-founder of Kay & Warburton. As a result of providing financial and business advisory services exclusively to the Entertainment industry for the last 24 years, Andrew has developed expertise in the specialized tax and reporting requirements of the industry in Canada including federal and provincial tax credits available for Canadian content and non-Canadian content productions, production audits, financial statement reporting and corporate tax planning. In addition, Andrew has consulted and provided due diligence on the feasibility of potential acquisitions, corporate restructurings and mergers. He provides his services to both domestic and foreign producers, federal and provincial agencies, non-profit enterprises, lending institutions, investors and cast and crew. Andrew earned a Bachelor of Business Administration degree with honours from York University in 1986 and obtained his Chartered Accountant designation in 1988. Andrew is a frequent participant at film and television financing conferences both in Canada and abroad as well as at information sessions for lending institutions and funding agencies.</br></br>
+</div>
+						</div>
+   </div>
+  <div class="row">
+  <div class="col-sm-6"><img src = "_DSC5189.png" style="width:71%; border: solid 3px black;"></div>
+
+  
+  <div class="col-sm-6" style="text-align: left;"><strong>Richard Warburton, CA</strong></br>
+						416-977-2416 x 225 | richard@kwca.com</br>
+                         <div id="moreinforich">More Info</div>
+                          <div id="richtext">
+                        
+                          
+                         	</br> Richard Warburton is a founding partner in Kay and Warburton. With over 21 years experience working in the film and television industry, Richard has gained a thorough understanding of its complex tax, accounting and finance issues. Richard has written several papers and spoken frequently about Canadian Federal and Provincial tax credits and corporate and personal tax as it relates to producers, cast and crew in the industry. He also provides his services to several charities and non-profits including Hot Docs, the Feature Film Project and Contact Toronto Photography Festival.
+						</br></br>
+						Richard is a graduate of the Business School at the University of Western Ontario. He articled at Deloitte and Touche, obtaining his Chartered Accountant designation in 1990.
+                          </div>
+					</div>
+  </div>
+    <div class="row">
+  <div class="col-sm-12">
+    </br></br></br>
+<img src="empys.png" style="width:100%; height:auto;">
+</div>
+ </div>
+</div>
+
+
+<div id="section5" class="container-fluid">
+
+  
+<div id="googleMap" style="height:400px;width:100%; padding:0px;margin:0px;"></div>
+
+<!-- Add Google Maps -->
+<script src="http://maps.googleapis.com/maps/api/js"></script>
+<script>
+var myCenter = new google.maps.LatLng(43.6492418,-79.3895081);
+
+function initialize() {
+var mapProp = {
+  center:myCenter,
+  zoom:12,
+  scrollwheel:false,
+  draggable:false,
+  mapTypeId:google.maps.MapTypeId.ROADMAP
+  };
+
+var map = new google.maps.Map(document.getElementById("googleMap"),mapProp);
+
+var marker = new google.maps.Marker({
+  position:myCenter,
+  });
+
+marker.setMap(map);
+}
+
+google.maps.event.addDomListener(window, 'load', initialize);
+</script>
+  </div>
+<div id="section4" class="container-fluid" style="background: url(contactbg.png); background-size:auto;">
+  <h1>Contact Us</h1>
+  <p style="font-size:12pt;">
+    </br>
+  			225 Richmond St. West</br>
+Suite 403</br>
+Toronto, M5V 1W2</br>
+Canada</br></br>
+
+Ph  (416) 977-2416</br>
+Fax  (416) 977-8549</br>
+info@kwca.com
+</p>
+</div>
+
+</body>
+</html>
+

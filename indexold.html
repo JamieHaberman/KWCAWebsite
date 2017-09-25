@@ -1,0 +1,569 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+    <title>Kay + Warburton</title>
+</head>
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+<script src="jquery.min.js"></script>
+<link href="index.css" rel="stylesheet" type="text/css" />
+<meta name="viewport" content="width=device-width"/>
+
+
+<script>
+	
+	
+  $(document).ready(function() {
+	$('#boss').css('width', '40%');
+		$('#boss').css('height', '20%');
+	$('#boss').css('margin-left', '15%');
+	
+	
+  $("#moreinfodrew").on("click", function(){
+		$('#drew').css('backgroundColor', '#ef432e');
+	 $( "#boss" ).css(
+    'width', "50%");
+	 
+$('#moreinfodrew').css('visibility', 'hidden');
+	$('#drewtext').css('visibility', 'visible');
+		$('#boss').css('margin-left', '7%');
+	
+	});
+    $("#moreinforich").on("click", function(){
+	$('#moreinforich').css('visibility', 'hidden');
+	$('#richtext').css('visibility', 'visible');
+		$('#richard').css('backgroundColor', '#75cfea');
+	
+	});
+  
+  
+  });
+</script>
+<style>
+	   
+
+.fadein { position:relative; height:800px; width:100%; }
+.fadein img { position:absolute; left:0; top:0; width:100%; height:100%; }
+
+  
+    #outercontainer{
+        background-color:white;
+        width:100%;
+        height:100%;
+		
+		
+    }
+	#bio2{padding:8px;}
+	#bio1{padding:8px;}
+    #header{
+        background-color:white;
+        width:100%;
+		height:100px;
+		position:fixed;
+		margin-top:0px;
+		z-index:5;
+		padding-bottom:30px;
+		top:0px;
+		
+    }
+    #logo{
+		background-color:white;
+		width:400px;
+		margin-top:50px;
+		height:50px;
+		margin-left:80px;
+		background-image:url(log.jpg);
+		background-size:100%;
+		background-repeat: no-repeat;
+	}
+      .nav{
+        float: left;
+        color:black;
+		margin-left:40px;
+		font-family: arial;
+		font-style: normal;
+		padding-top:10px;
+		text-decoration: none;
+    }
+    
+    .nav:hover{
+        color:grey;
+		}
+    #home{
+        background-color:#75cfea;
+        float:left;
+        width:100%;
+        height:800px;
+		
+		background-size:100%;
+    }
+    #homebar{
+		float:left;
+		width:40%;
+		height:800px;
+		color:black;
+		margin-left:750px;
+		text-align:center;
+		font-style: oblique;
+	}
+    #client{
+        background-color:#75cfea;
+        float:left;
+        width:100%;
+        height:500px;
+    }
+    
+    #about{
+		background-image:url(aboutbg.png);
+        background-color:#75cfea;
+        float:left;
+        width:100%;
+        height:1000px;
+		opacity:1;
+		text-align:left;
+		background-size:105%;
+		background-repeat: no-repeat;
+    }
+	.title{
+	font-family:Arial;
+	text-align:center;
+	padding-top:150px;
+	font-size:40pt;
+	
+	}
+	#drew{float:left;width:175%; font-size:11pt; font-family:Arial;}
+	.text{
+	font-family:Arial;
+	text-align:center;
+
+	font-size:15pt;
+	
+	}
+	#border{overflow:hidden;height:440px;width:400px; float:right;}
+    #image{
+	
+		background-size:80%;
+         background-color:#ef432e;
+        float:left;
+        width:100%;
+		
+        height:610px;
+    }
+	
+	.slideshow img{
+		width:100%;
+		position:absolute;
+		height:800px;
+	}
+		.slideshow { 
+  
+    position: relative; 
+    width: 100%; 
+    height: 700px; 
+	
+}
+
+.slideshow > div { 
+    position: absolute; 
+    
+   
+  
+}
+    #staff{
+        background-color:#b0b0b1;
+        float:left;
+        width:100%;
+        height:240%;
+    }
+	#boss{
+		width:50%;
+	margin-left:7%;
+		height:500px;
+		
+	}
+	.bigshot{
+		width:40%;
+		margin:auto;
+		float:left;
+		margin:20px;
+	
+		
+	}
+    #contact{
+		
+        background-color:white;
+        float:left;
+        width:100%;
+        height:800px;
+		background-image: url(contacct.png);
+		background-size:100%;
+		background-repeat: no-repeat;
+    }
+#contactbar{padding:60px; font-family:Arial; font-size:23pt;padding-top:150px;}
+    #backtotop{
+      
+         background-color:#ef432e;
+        float:left;
+        width:100%;
+        height:200px;
+		padding-bottom:30px;
+    }
+	#drewtext{visibility:hidden;}
+	#richtext{visibility:hidden; font-family:Arial;}
+    #footer{
+         background-color:white;
+        float:left;
+        width:100%;
+        height:100px;
+    }
+	#bar{
+		position: absolute;
+		left: 800px;
+		width: 600px;
+		height: 100px;
+		top: 50px;
+	
+		
+	}
+	#moreinfodrew{color:#ef432e}
+	#moreinforich{color:#ef432e}
+	#gmap_canvas{
+		height:440px;width:700px;}
+	 #map {
+        width: 500px;
+        height: 400px;
+		float:right;
+		margin-right:120px;
+		margin-top:150px;
+      }
+	  #abouttext{font-size:12pt; width:65vw; margin:auto; text-align:left; margin-top:-30px; padding-top:0px;}
+
+@media screen and (min-width: 1500px), screen\9{
+	
+	#about{height:1200px;}
+	.fadein{width:1500px;}
+	#boss{ position:relative; left:0%;}
+	#home{height:800px;}
+	#contact{height:800px; width:100%; background-color:#75cfea; background-size:100%; 
+		}
+	#contactbar{font-size:32pt;font:Arial; width:30%;}
+	#staff{height:2500px;}
+	#boss{margin-bottom:500px;}
+	#abouttext{font-size:15pt; font-family:Tahoma; text-align: center; margin:auto; width:70%;}
+	#logo{width:900px;height:100px;background-size:60%;}
+	#header{height:140px;}
+	#bar{right:0px; margin-left:400px;position:absolute; font-size:15pt; float:right;}
+	
+	@keyframes moveSlideshow{
+		100%{
+			transform:translateX(-20%);}}	
+	
+	}
+
+
+@media screen and (max-width: 1024px){
+	
+	#bar{
+			left:550px;
+			font-size:11pt;
+			}
+			#home{
+				height:450px;}
+				#about{
+					height:1100px;}
+				#map{width:350px; height:300px; }
+				#gmap_canvas{width:350px; height:300px;float:right;margin-right:-100px;}
+					#contact{height:630px;margin-bottom:0px;}
+					#staff{height:1800px;}
+	}	
+	
+@media screen and (max-width: 966px){
+.fadein { height:500px; }
+				#home{height:500px;}
+
+		#bar{
+			left:500px;
+			}
+							#about{
+					height:1300px;}
+				#map{width:300px; height:300px; }
+				#gmap_canvas{width:300px; height:300px;float:right;}
+				#staff{height:1800px;}
+		}
+		@media screen and (max-width: 414px) {
+			.tech-slideshow2 {
+  height: 50px;
+  
+}
+
+.tech-slideshow2 > div {
+  
+ 
+  background-size:16%;
+
+  height: 120%;
+  
+}
+
+			#cent{height:250px;}
+			#header{height:20px;}
+			#contact{height:270px;}
+			.nav{visibility:hidden;}
+			#logo{width:200px;margin-left:20px;height:26px;margin-top:18px;margin-bottom:0px;}
+			#home{height:300px;}
+			.fadein { height:300px;top:-60px; }
+			.title{font-size:18pt;padding-top:50px;}
+			#abouttext{font-size:8pt; }
+			#about{height:900px;}
+			#bio1{font-size:7.5pt; width:280px; }
+				#drewtext{font-size:7pt; padding-left:20px;}
+				#bio2{font-size:7.5pt; width:280px; }
+				#richtext{font-size:7pt;padding-left:20px;}
+			#staff{height:1100px;}
+				#map{visibility:hidden; width:0px;height:0px;}
+				#gmap_canvas{visibility:hidden;width:0px;height:0px;}
+				#border{visibility:hidden;width:0px;height:0px;}
+				#contactbar{position:absolute;top:2270px;left:-28px;font-size:10pt; height:120px;}
+				body{height:0px;}
+				@keyframes moveSlideshow{
+		100%{
+			transform:translateX(-10%);}}	
+			}
+			@media screen and (max-width: 320px) {
+				#cent{height:80px;}
+				.title{padding-top:80px;}
+				body{height:50px;}
+				#home{height:230px; margin-bottom:0px;}
+				.fadein{height:230px;top:-100px;}
+				#header{height:15px;margin-bottom:0px;}
+				#logo{width:150px; height:27px; margin-top:15px;}
+				#staff{height:950px;}
+				#contactbar{top:2120px; font-size:7pt;}
+				#contact{height:200px;}
+				#about{height:1080px;padding-top:20px;}
+				#bio1{font-size:7pt; width:250px; }
+				#drewtext{font-size:6pt;}
+				#bio2{font-size:7pt; width:250px; }
+				#richtext{font-size:6pt;}
+	@keyframes moveSlideshow{
+		100%{
+			transform:translateX(-10%);}}			
+@-webkit-keyframes moveSlideshow {
+	
+100% { 
+   -webkit-transform:  translateX(-10%);  
+  }
+}
+
+.tech-slideshow2 {
+  height: 60px;
+ 
+}
+
+.tech-slideshow2 > div {
+  
+  width: 32056px;
+
+  background-size:18%;
+ 
+}
+
+
+				}
+			
+</style>
+<script>
+$(function(){
+	$('.fadein img:gt(0)').hide();
+	setInterval(function(){$('.fadein :first-child').fadeOut().next('img').fadeIn().end().appendTo('.fadein');}, 3000);
+});
+</script>
+<body >
+
+    <div id="outercontainer">
+		
+		<div id="header">
+			<div id="logo"></div>
+			
+			 <div id="bar">
+				 <a href="#home" class="nav" ><div>
+                       HOME
+                </div></a>
+
+                        
+                <a href="#about" class="nav"><div>
+                        ABOUT US
+                </div></a>
+				           
+                <a href="#staff" class="nav"><div>
+                       TEAM
+                </div></a>
+				
+				<a href="#contact" class="nav"><div>
+                        CONTACT US
+                </div></a>
+            </div><!--close bar-->
+		</div><!--closeheader-->
+		</br></br></br></br></br></br>
+		<div id="home">
+			<center id="cent">
+<div class="fadein">
+
+  <img src="richoffice.png">
+
+	
+	<img src="_DSC5326.jpg">
+
+	
+<img src="meetingroom.png">
+  	<img src="kw.png">
+<img src="_DSC5113.jpg">
+<img src="_DSC5283.jpg">
+<img src="_DSC5210.jpg">
+<img src="chairsfron.png">
+<img src="_DSC5140.jpg">
+<img src="_DSC5158 (1).jpg">
+<img src="_DSC5322.jpg">
+
+
+
+<img src="cn.png">
+<img src="19.jpg">
+
+
+			<img src="park.png">
+			<img src="_DSC5338.jpg">
+
+			<img src="_DSC5111.jpg">
+
+			
+			<img src="bwchair.png">
+			<img src="7.jpg">
+	
+			<img src="_DSC5093.jpg">
+
+			
+			
+</div>
+	
+		
+		  </center>
+		<div id="about">
+			
+			<div class="title">ABOUT US</div></br></br>
+			
+			
+				
+			 <div class="tech-slideshow2">
+  <div class="mover-3"></div>
+  <div class="mover-4"></div>
+</div>
+			<div class="text" id="abouttext" >
+
+</br></br></br></br>Kay & Warburton is a leading Canadian accounting firm specializing in accounting, tax and advisory services to the entertainment and media industry.  Founded in 1992 by industry veterans Andrew Kay and Richard Warburton, Kay & Warburton is  the largest independent practice of chartered professional accountants in this industry based in Canada.
+
+
+</br></br>
+Over the past 24 years, we have established ourselves as the leading entertainment accounting firm in Canada. Our expertise and knowledge of the Canadian film and television business, including the myriad of complex government programs and tax credits, has made us the leader in the industry. Our client list includes top production companies from across Canada and companies from the United States and other jurisdictions who want to access the Canadian tax credits for their productions. 
+</br></br>
+Our services include production tax credit filings and collections, production audits for tax purposes, structuring and tax advice, corporate financial statement audits and reviews, advisory and consulting services for lenders to the media industry, investors and sellers, due diligence investigations, valuations and transaction support.  We are often consulted on cross border structuring and are involved in tax assessments and compliance.
+</br></br>
+The legislation governing the media and entertainment business is intricate and is constantly evolving.  At Kay & Warburton we only serve one industry and we are the leading experts in our field.  We are on top of any legislative and tax changes and prospective amendments and help our clients react and adapt to this ever-changing complex environment.
+
+ 
+</br></br></br></br></br></br></br></div><!--closetext-->
+			
+	
+		</div><!--close aboutus-->
+		
+		
+		
+					
+		<div id="staff">
+			<div class="title"> OUR TEAM</div>
+			</br></br>
+			<div id="boss">
+				<div id="drew" >
+				<img style="width:44.3%;" class="bigshot" src = "drew.png">
+				</br>
+					<div class='bio'id="bio1" >
+						<strong>Andrew Kay, CA</strong>
+					</br>
+						416-977-2416 x 223 | andrew@kwca.com</br>
+						<div id='moreinfodrew'><em>More Info</em></div>
+						<div id='drewtext'>
+						Andrew Kay is a partner and co-founder of Kay & Warburton. As a result of providing financial and business advisory services exclusively to the Entertainment industry for the last 24 years, Andrew has developed expertise in the specialized tax and reporting requirements of the industry in Canada including federal and provincial tax credits available for Canadian content and non-Canadian content productions, production audits, financial statement reporting and corporate tax planning. In addition, Andrew has consulted and provided due diligence on the feasibility of potential acquisitions, corporate restructurings and mergers. He provides his services to both domestic and foreign producers, federal and provincial agencies, non-profit enterprises, lending institutions, investors and cast and crew. Andrew earned a Bachelor of Business Administration degree with honours from York University in 1986 and obtained his Chartered Accountant designation in 1988. Andrew is a frequent participant at film and television financing conferences both in Canada and abroad as well as at information sessions for lending institutions and funding agencies.
+</div>
+
+					</div>
+					
+					</div>
+				
+				<div id="richard" style=" float:left; width:175%; font-size:11pt;font-family:Tahoma;">
+				<img class="bigshot" src = "_DSC5189.png"style="width:44.5%;">
+				</br>
+					<div class="bio" id='bio2'>
+						<strong>Richard Warburton, CA</strong></br>
+						416-977-2416 x 225 | richard@kwca.com</br>
+						<div id='moreinforich'><em>More Info</em></div>
+							<div id='richtext' >
+						Richard Warburton is a founding partner in Kay and Warburton. With over 21 years experience working in the film and television industry, Richard has gained a thorough understanding of its complex tax, accounting and finance issues. Richard has written several papers and spoken frequently about Canadian Federal and Provincial tax credits and corporate and personal tax as it relates to producers, cast and crew in the industry. He also provides his services to several charities and non-profits including Hot Docs, the Feature Film Project and Contact Toronto Photography Festival.
+						</br></br>
+						Richard is a graduate of the Business School at the University of Western Ontario. He articled at Deloitte and Touche, obtaining his Chartered Accountant designation in 1990.
+					</div>
+					</div>
+		
+			</div>
+			
+		</div>
+			</br></br>
+			<center>
+				
+<img src="emp.png" style="width:85%; margin:auto;margin-top:40px;"></center>
+		
+		</div>
+	<div id="contact">
+   <div id="map">
+    <script>
+      function initMap() {
+        var mapDiv = document.getElementById('map');
+        var map = new google.maps.Map(mapDiv, {
+          center: {lat: 44.540, lng: -78.546},
+          zoom: 8
+        });
+      }
+    </script>
+   <script src='https://maps.googleapis.com/maps/api/js?v=3.exp'></script>
+   <div id="border">
+	<div id='gmap_canvas' >
+		
+	</div><div><small><a href="http://embedgooglemaps.com">
+	
+	</a></small></div><div><small><a href="https://termsofusegenerator.net">
+	</a></small></div><style>
+	#gmap_canvas img{max-width:none!important;background:none!important}</style>
+   </div><script type='text/javascript'>function init_map(){var myOptions = {zoom:17,center:new google.maps.LatLng(43.6492418,-79.3895081),
+   mapTypeId: google.maps.MapTypeId.ROADMAP};map = new google.maps.Map(document.getElementById('gmap_canvas'), myOptions);
+   marker = new google.maps.Marker({map: map,position: new google.maps.LatLng(43.6492418,-79.3895081)});
+   infowindow = new google.maps.InfoWindow({content:'<strong>KWCA</strong><br>225 Richmond St. West Toronto<br>'});
+   google.maps.event.addListener(marker, 'click', function(){infowindow.open(map,marker);});infowindow.open(map,marker);}
+   google.maps.event.addDomListener(window, 'load', init_map);</script>
+   </div>
+		<div id="contactbar" >
+			CONTACT US</br></br>
+			225 Richmond St. West</br>
+Suite 403</br>
+Toronto, M5V 1W2</br>
+Canada</br></br>
+
+Ph  (416) 977-2416</br>
+Fax  (416) 977-8549</br>
+info@kwca.com
+		</div>
+	</div>
+	
+	</div>
+  
+</body>
+</html>
